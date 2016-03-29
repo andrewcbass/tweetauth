@@ -82,18 +82,6 @@ userSchema.statics.authMiddleware = function(req, res, next) {
   });
 };
 
-// //edit the likes of a logged in user
-// userSchema.statics.editLikes = function(userObj, ) {
-//   User.findByIdAndUpdate(req.user._id, , function(req, user) {
-//     if(err || !user) {
-//       return res.status(400).send("Error with request!");
-//     } else {
-//       res.send(user);
-//     };
-//   });
-// };
-
-
 User = mongoose.model("User", userSchema);
 
 module.exports = User;
